@@ -19,7 +19,7 @@ class _TouchKeywords(KeywordGroup):
     def scroll_down(self, locator):
         """Scrolls down to element"""
         driver = self._current_application()
-        element = self._find_element(self, locator)
+        element = self._find_element(locator)
         driver.execute_script("mobile: scroll", {"direction": 'down', 'elementid': element.id})
 
     def scroll_up(self, locator):
